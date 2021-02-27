@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="15dp"
+            android:text="Parcial Práctico DSM 02 L"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="10dp"
+            android:background="?android:attr/colorPressedHighlight" />
+
+        <Button
+            android:id="@+id/btnExercise1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:minWidth="50dp"
+            android:minHeight="150dp"
+            android:onClick="RedirectTo"
+            android:text="Ejercicio 1"
+            android:textAlignment="center"
+            app:backgroundTint="#3D5AFE"
+            app:icon="@drawable/solcuadratica"
+            app:iconGravity="end"
+            app:iconSize="100dp"
+            app:iconTint="@color/material_on_background_disabled"
+            app:iconTintMode="screen" />
+
+        <Button
+            android:id="@+id/btnExercise2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:minWidth="50dp"
+            android:minHeight="150dp"
+            android:onClick="RedirectTo"
+            android:text="Ejercicio 2"
+            app:backgroundTint="#3D5AFE"
+            app:icon="@drawable/votos"
+            app:iconSize="100dp"
+            app:iconTint="@color/material_on_background_disabled"
+            app:iconTintMode="screen" />
+
+        <Button
+            android:id="@+id/btnExercise3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:minWidth="50dp"
+            android:minHeight="150dp"
+            android:onClick="RedirectTo"
+            android:text="Ejercicio 3"
+            app:backgroundTint="#3D5AFE"
+            app:icon="@drawable/empleado"
+            app:iconGravity="end"
+            app:iconSize="100dp"
+            app:iconTint="@color/material_on_background_disabled"
+            app:iconTintMode="screen" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
