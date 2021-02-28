@@ -21,7 +21,8 @@
             android:text="Solución de Ecuación Cuadrática"
             android:textAlignment="center"
             android:textColor="#000000"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <View
             android:id="@+id/divider3"
