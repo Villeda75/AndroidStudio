@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btnExercise2: i = new Intent(MainActivity.this, votos.class);
                     break;
-                case R.id.btnExercise3: i = new Intent(MainActivity.this, SueldoLiquidoActivity.class);
+                case R.id.btnExercise3: i = new Intent(MainActivity.this, registroEmpleados.class);
                     break;
             }
 

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registroEmpleados">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-80dp"
+        tools:layout_editor_absoluteY="-346dp">
+
+        <TextView
+            android:id="@+id/tvTitle2"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="15dp"
+            android:text="Calcular el pago de un empleado"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="10dp"
+            android:background="?android:attr/colorPressedHighlight" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="#060609"
+            android:text="Empleado 1"
+            android:textAlignment="center"
+            android:textColor="#EFF1FA"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="25dp"
+            android:text="Ingrese los siguientes valores:"
+            android:textAlignment="center"
+            android:textColor="#0D1439"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/txtNombres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Nombres: Josué Alexander"
+            android:inputType="textPersonName"
+            android:textColor="#070707"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/txtApellidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Apellidos: Villeda Chacón"
+            android:inputType="textPersonName"
+            android:textColor="#070707"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/txtCargo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Cargo: Gerente"
+            android:inputType="textPersonName"
+            android:textColor="#070707"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/txtHoras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Horas trabajadas en el mes: 105"
+            android:inputType="number"
+            android:textColor="#070707"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnSiguiente"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="50dp"
+            android:width="25dp"
+            android:maxWidth="25dp"
+            android:maxHeight="50dp"
+            android:minWidth="25dp"
+            android:minHeight="60dp"
+            android:onClick="Siguiente"
+            android:text="Siguiente"
+            app:backgroundTint="#304FFE" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

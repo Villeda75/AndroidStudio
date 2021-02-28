@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MENUDEEJERCICIOS">
+        <activity android:name=".registroEmpleados"></activity>
         <activity
             android:name=".SueldoLiquidoActivity"
             android:label="@string/title_activity_sueldo_liquido"
-            android:theme="@style/Theme.MENUDEEJERCICIOS.NoActionBar"></activity>
+            android:theme="@style/Theme.MENUDEEJERCICIOS.NoActionBar" />
         <activity android:name=".votos" />
         <activity android:name=".ecuacionCuadratica" />
         <activity

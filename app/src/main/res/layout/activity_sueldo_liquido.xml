@@ -10,38 +10,289 @@
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/app_bar_height"
+        android:layout_height="64dp"
+        android:background="#0B0909"
         android:fitsSystemWindows="true"
-        android:theme="@style/Theme.MENUDEEJERCICIOS.AppBarOverlay">
+        android:theme="@style/Theme.MENUDEEJERCICIOS.AppBarOverlay" >
 
-        <com.google.android.material.appbar.CollapsingToolbarLayout
-            android:id="@+id/toolbar_layout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fitsSystemWindows="true"
-            app:contentScrim="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed"
-            app:toolbarId="@+id/toolbar">
-
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                app:layout_collapseMode="pin"
-                app:popupTheme="@style/Theme.MENUDEEJERCICIOS.PopupOverlay" />
-
-        </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/content_scrolling" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1430dp"
+        android:orientation="vertical">
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/fab_margin"
-        app:layout_anchor="@id/app_bar"
-        app:layout_anchorGravity="bottom|end"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="50dp"
+            android:text="Pago líquido de empleados"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="25dp"
+            android:background="#060609"
+            android:text="Empleado 1"
+            android:textAlignment="center"
+            android:textColor="#EFF1FA"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/txtNombres5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Nombres: Josué Alexander"
+            android:inputType="textPersonName"
+            android:textColor="#070707"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/txtApellidos5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Apellidos: Villeda Chacón"
+            android:inputType="textPersonName"
+            android:textColor="#070707"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/txtCargo5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Cargo: Gerente"
+            android:inputType="textPersonName"
+            android:textColor="#070707"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/txtHoras5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Horas trabajadas en el mes: 105"
+            android:inputType="number"
+            android:textColor="#070707"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="25dp"
+            android:background="#060609"
+            android:text="Empleado 2"
+            android:textAlignment="center"
+            android:textColor="#EFF1FA"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/txtNombres4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Nombres: Josué Alexander"
+            android:inputType="textPersonName"
+            android:textColor="#070707"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/txtApellidos4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Apellidos: Villeda Chacón"
+            android:inputType="textPersonName"
+            android:textColor="#070707"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/txtCargo4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Cargo: Gerente"
+            android:inputType="textPersonName"
+            android:textColor="#070707"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/txtHoras4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Horas trabajadas en el mes: 105"
+            android:inputType="number"
+            android:textColor="#070707"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="25dp"
+            android:background="#060609"
+            android:text="Empleado 3"
+            android:textAlignment="center"
+            android:textColor="#EFF1FA"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/txtNombres3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Nombres: Josué Alexander"
+            android:inputType="textPersonName"
+            android:textColor="#070707"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/txtApellidos3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Apellidos: Villeda Chacón"
+            android:inputType="textPersonName"
+            android:textColor="#070707"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/txtCargo3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Cargo: Gerente"
+            android:inputType="textPersonName"
+            android:textColor="#070707"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/txtHoras3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Horas trabajadas en el mes: 105"
+            android:inputType="number"
+            android:textColor="#070707"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="25dp"
+            android:background="#060609"
+            android:text="Empleado 4"
+            android:textAlignment="center"
+            android:textColor="#EFF1FA"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/txtNombres2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Nombres: Josué Alexander"
+            android:inputType="textPersonName"
+            android:textColor="#070707"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/txtApellidos2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Apellidos: Villeda Chacón"
+            android:inputType="textPersonName"
+            android:textColor="#070707"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/txtCargo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Cargo: Gerente"
+            android:inputType="textPersonName"
+            android:textColor="#070707"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/txtHoras2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Horas trabajadas en el mes: 105"
+            android:inputType="number"
+            android:textColor="#070707"
+            android:textSize="24sp" />
+    </LinearLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
