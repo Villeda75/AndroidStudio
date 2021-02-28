@@ -7,19 +7,18 @@
     android:fitsSystemWindows="true"
     tools:context=".SueldoLiquidoActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/app_bar"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:background="#0B0909"
-        android:fitsSystemWindows="true"
-        android:theme="@style/Theme.MENUDEEJERCICIOS.AppBarOverlay" >
-
-    </com.google.android.material.appbar.AppBarLayout>
+        android:layout_height="wrap_content"
+        android:background="#0C0C0C"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="1430dp"
+        android:background="#0FFBF8F8"
         android:orientation="vertical">
 
         <TextView
@@ -29,6 +28,7 @@
             android:layout_marginStart="50dp"
             android:layout_marginTop="14dp"
             android:layout_marginEnd="50dp"
+            android:background="#0C0C0C"
             android:text="Pago líquido de empleados"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
@@ -41,7 +41,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="40dp"
             android:layout_marginEnd="25dp"
-            android:background="#060609"
+            android:background="#304FFE"
             android:text="Empleado 1"
             android:textAlignment="center"
             android:textColor="#EFF1FA"
@@ -57,6 +57,7 @@
             android:ems="10"
             android:hint="Nombres: Josué Alexander"
             android:inputType="textPersonName"
+            android:text="Andrea Chantell "
             android:textColor="#070707"
             android:textSize="24sp" />
 
@@ -70,6 +71,7 @@
             android:ems="10"
             android:hint="Apellidos: Villeda Chacón"
             android:inputType="textPersonName"
+            android:text="Alvarenga Amaya"
             android:textColor="#070707"
             android:textSize="24sp" />
 
@@ -82,7 +84,8 @@
             android:layout_marginEnd="20dp"
             android:ems="10"
             android:hint="Cargo: Gerente"
-            android:inputType="textPersonName"
+            android:inputType="textPersonName|numberDecimal"
+            android:text="ISS:  $"
             android:textColor="#070707"
             android:textSize="24sp" />
 
@@ -95,7 +98,36 @@
             android:layout_marginEnd="20dp"
             android:ems="10"
             android:hint="Horas trabajadas en el mes: 105"
-            android:inputType="number"
+            android:inputType="number|numberDecimal"
+            android:text="AFP: $"
+            android:textColor="#070707"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/txtHoras6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Horas trabajadas en el mes: 105"
+            android:inputType="number|numberDecimal"
+            android:text="Renta: $"
+            android:textColor="#070707"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/txtHoras8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Horas trabajadas en el mes: 105"
+            android:inputType="number|numberDecimal"
+            android:text="Sueldo líquido: $"
             android:textColor="#070707"
             android:textSize="24sp" />
 
@@ -104,9 +136,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="25dp"
             android:layout_marginEnd="25dp"
-            android:background="#060609"
+            android:background="#304FFE"
             android:text="Empleado 2"
             android:textAlignment="center"
             android:textColor="#EFF1FA"
@@ -122,6 +154,7 @@
             android:ems="10"
             android:hint="Nombres: Josué Alexander"
             android:inputType="textPersonName"
+            android:text="Josué Alexander"
             android:textColor="#070707"
             android:textSize="24sp" />
 
@@ -135,6 +168,7 @@
             android:ems="10"
             android:hint="Apellidos: Villeda Chacón"
             android:inputType="textPersonName"
+            android:text="Villeda Chacón"
             android:textColor="#070707"
             android:textSize="24sp" />
 
@@ -148,6 +182,7 @@
             android:ems="10"
             android:hint="Cargo: Gerente"
             android:inputType="textPersonName"
+            android:text="Asistente"
             android:textColor="#070707"
             android:textSize="24sp" />
 
@@ -161,6 +196,7 @@
             android:ems="10"
             android:hint="Horas trabajadas en el mes: 105"
             android:inputType="number"
+            android:text="160"
             android:textColor="#070707"
             android:textSize="24sp" />
 
@@ -171,7 +207,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="40dp"
             android:layout_marginEnd="25dp"
-            android:background="#060609"
+            android:background="#304FFE"
             android:text="Empleado 3"
             android:textAlignment="center"
             android:textColor="#EFF1FA"
@@ -293,6 +329,18 @@
             android:inputType="number"
             android:textColor="#070707"
             android:textSize="24sp" />
-    </LinearLayout>
 
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="50dp"
+            android:background="#ACABAB"
+            android:text="NO HAY BONO"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+    </LinearLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

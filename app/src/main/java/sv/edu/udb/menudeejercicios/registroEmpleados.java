@@ -33,10 +33,12 @@ public class registroEmpleados extends AppCompatActivity {
             boolean isValidate = empleado.validarHoras( Horas );
 
             if( isValidate ){
-                notificacion1 = Toast.makeText(this,"IsValidate",Toast.LENGTH_LONG);
+                //notificacion1 = Toast.makeText(this,"Las horas deben ser mayor a cero ( Horas > 0 )",Toast.LENGTH_LONG);
+                Intent GoNext = new Intent(this, SueldoLiquidoActivity.class);
+                startActivity(GoNext);
 
             } else {
-                notificacion1 = Toast.makeText(this,"IsNotValidate",Toast.LENGTH_LONG);
+                notificacion1 = Toast.makeText(this,"Las horas deben ser mayor a cero ( Horas > 0 )",Toast.LENGTH_LONG);
             }
             notificacion1.show();
 
