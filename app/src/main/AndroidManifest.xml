@@ -9,8 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MENUDEEJERCICIOS">
-        <activity android:name=".ecuacionCuadratica"></activity>
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".SueldoLiquidoActivity"
+            android:label="@string/title_activity_sueldo_liquido"
+            android:theme="@style/Theme.MENUDEEJERCICIOS.NoActionBar"></activity>
+        <activity android:name=".votos" />
+        <activity android:name=".ecuacionCuadratica" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

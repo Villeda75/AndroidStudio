@@ -26,15 +26,14 @@ public class MainActivity extends AppCompatActivity {
             switch (view.getId()){
                 case R.id.btnExercise1:
                     i = new Intent(MainActivity.this, ecuacionCuadratica.class);
-                    startActivity(i);
                     break;
-                case R.id.btnExercise2: //i = new Intent(this, ecuacionCuadratica.class);
+                case R.id.btnExercise2: i = new Intent(MainActivity.this, votos.class);
                     break;
-                case R.id.btnExercise3: //i = new Intent(this, ecuacionCuadratica.class);
+                case R.id.btnExercise3: i = new Intent(MainActivity.this, SueldoLiquidoActivity.class);
                     break;
             }
 
-            //startActivity(i);
+            startActivity(i);
 
         } catch (Exception error) {
             Toast.makeText(getApplicationContext(), "Ocurrió un error inesperado...", Toast.LENGTH_SHORT).show();
