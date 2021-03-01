@@ -15,332 +15,345 @@
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme" />
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="50dp"
+        android:background="#0C0C0C"
+        android:text="Pago líquido de empleados"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="1430dp"
-        android:background="#0FFBF8F8"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="14dp"
-            android:layout_marginEnd="50dp"
-            android:background="#0C0C0C"
-            android:text="Pago líquido de empleados"
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="24sp" />
-
-        <TextView
-            android:id="@+id/textView9"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="25dp"
-            android:background="#304FFE"
-            android:text="Empleado 1"
-            android:textAlignment="center"
-            android:textColor="#EFF1FA"
-            android:textSize="24sp" />
+            android:background="#0FFBF8F8"
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/txtNombres5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="20dp"
-            android:ems="10"
-            android:hint="Nombres: Josué Alexander"
-            android:inputType="textPersonName"
-            android:text="Andrea Chantell "
-            android:textColor="#070707"
-            android:textSize="24sp" />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        <EditText
-            android:id="@+id/txtApellidos5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="20dp"
-            android:ems="10"
-            android:hint="Apellidos: Villeda Chacón"
-            android:inputType="textPersonName"
-            android:text="Alvarenga Amaya"
-            android:textColor="#070707"
-            android:textSize="24sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+            </ScrollView>
 
-        <EditText
-            android:id="@+id/txtCargo5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="20dp"
-            android:ems="10"
-            android:hint="Cargo: Gerente"
-            android:inputType="textPersonName|numberDecimal"
-            android:text="ISS:  $"
-            android:textColor="#070707"
-            android:textSize="24sp" />
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="25dp"
+                android:background="#304FFE"
+                android:text="Empleado 1"
+                android:textAlignment="center"
+                android:textColor="#EFF1FA"
+                android:textSize="24sp" />
 
-        <EditText
-            android:id="@+id/txtHoras5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="20dp"
-            android:ems="10"
-            android:hint="Horas trabajadas en el mes: 105"
-            android:inputType="number|numberDecimal"
-            android:text="AFP: $"
-            android:textColor="#070707"
-            android:textSize="24sp" />
+            <EditText
+                android:id="@+id/txtNombresEmpleado1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Nombres"
+                android:inputType="textPersonName"
+                android:textColor="#070707"
+                android:textSize="24sp" />
 
-        <EditText
-            android:id="@+id/txtHoras6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="20dp"
-            android:ems="10"
-            android:hint="Horas trabajadas en el mes: 105"
-            android:inputType="number|numberDecimal"
-            android:text="Renta: $"
-            android:textColor="#070707"
-            android:textSize="24sp" />
+            <EditText
+                android:id="@+id/txtApellidosEmpleado1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Apellidos"
+                android:inputType="textPersonName"
+                android:textColor="#070707"
+                android:textSize="24sp" />
 
-        <EditText
-            android:id="@+id/txtHoras8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="20dp"
-            android:ems="10"
-            android:hint="Horas trabajadas en el mes: 105"
-            android:inputType="number|numberDecimal"
-            android:text="Sueldo líquido: $"
-            android:textColor="#070707"
-            android:textSize="24sp" />
+            <EditText
+                android:id="@+id/txtDescuentoISS1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Descuento ISS"
+                android:inputType="textPersonName|numberDecimal"
+                android:textColor="#070707"
+                android:textSize="24sp" />
 
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="25dp"
-            android:background="#304FFE"
-            android:text="Empleado 2"
-            android:textAlignment="center"
-            android:textColor="#EFF1FA"
-            android:textSize="24sp" />
+            <EditText
+                android:id="@+id/txtDescuentoAFP1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Descuento AFP"
+                android:inputType="number|numberDecimal"
+                android:textColor="#070707"
+                android:textSize="24sp" />
 
-        <EditText
-            android:id="@+id/txtNombres4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="20dp"
-            android:ems="10"
-            android:hint="Nombres: Josué Alexander"
-            android:inputType="textPersonName"
-            android:text="Josué Alexander"
-            android:textColor="#070707"
-            android:textSize="24sp" />
+            <EditText
+                android:id="@+id/txtDescuentoRenta1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Descuento Renta"
+                android:inputType="number|numberDecimal"
+                android:textColor="#070707"
+                android:textSize="24sp" />
 
-        <EditText
-            android:id="@+id/txtApellidos4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="20dp"
-            android:ems="10"
-            android:hint="Apellidos: Villeda Chacón"
-            android:inputType="textPersonName"
-            android:text="Villeda Chacón"
-            android:textColor="#070707"
-            android:textSize="24sp" />
+            <EditText
+                android:id="@+id/txtSueldoEmpleado1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Sueldo líquido"
+                android:inputType="number|numberDecimal"
+                android:textColor="#070707"
+                android:textSize="24sp" />
 
-        <EditText
-            android:id="@+id/txtCargo4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="20dp"
-            android:ems="10"
-            android:hint="Cargo: Gerente"
-            android:inputType="textPersonName"
-            android:text="Asistente"
-            android:textColor="#070707"
-            android:textSize="24sp" />
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="#304FFE"
+                android:text="Empleado 2"
+                android:textAlignment="center"
+                android:textColor="#EFF1FA"
+                android:textSize="24sp" />
 
-        <EditText
-            android:id="@+id/txtHoras4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="20dp"
-            android:ems="10"
-            android:hint="Horas trabajadas en el mes: 105"
-            android:inputType="number"
-            android:text="160"
-            android:textColor="#070707"
-            android:textSize="24sp" />
+            <EditText
+                android:id="@+id/txtNombresEmpleado2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Nombres"
+                android:inputType="textPersonName"
+                android:textColor="#070707"
+                android:textSize="24sp" />
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="25dp"
-            android:background="#304FFE"
-            android:text="Empleado 3"
-            android:textAlignment="center"
-            android:textColor="#EFF1FA"
-            android:textSize="24sp" />
+            <EditText
+                android:id="@+id/txtApellidosEmpleado2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Apellidos"
+                android:inputType="textPersonName"
+                android:textColor="#070707"
+                android:textSize="24sp" />
 
-        <EditText
-            android:id="@+id/txtNombres3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="20dp"
-            android:ems="10"
-            android:hint="Nombres: Josué Alexander"
-            android:inputType="textPersonName"
-            android:textColor="#070707"
-            android:textSize="24sp" />
+            <EditText
+                android:id="@+id/txtDescuentoISS2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Descuento ISS"
+                android:inputType="textPersonName"
+                android:textColor="#070707"
+                android:textSize="24sp" />
 
-        <EditText
-            android:id="@+id/txtApellidos3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="20dp"
-            android:ems="10"
-            android:hint="Apellidos: Villeda Chacón"
-            android:inputType="textPersonName"
-            android:textColor="#070707"
-            android:textSize="24sp" />
+            <EditText
+                android:id="@+id/txtDescuentoAFP2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Descuento AFP"
+                android:inputType="number|numberDecimal"
+                android:textColor="#070707"
+                android:textSize="24sp" />
 
-        <EditText
-            android:id="@+id/txtCargo3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="20dp"
-            android:ems="10"
-            android:hint="Cargo: Gerente"
-            android:inputType="textPersonName"
-            android:textColor="#070707"
-            android:textSize="24sp" />
+            <EditText
+                android:id="@+id/txtDescuentoRenta2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Descuento Renta"
+                android:inputType="number|numberDecimal"
+                android:textColor="#070707"
+                android:textSize="24sp" />
 
-        <EditText
-            android:id="@+id/txtHoras3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="20dp"
-            android:ems="10"
-            android:hint="Horas trabajadas en el mes: 105"
-            android:inputType="number"
-            android:textColor="#070707"
-            android:textSize="24sp" />
+            <EditText
+                android:id="@+id/txtSueldoEmpleado2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Sueldo líquido"
+                android:inputType="number|numberDecimal"
+                android:textColor="#070707"
+                android:textSize="24sp" />
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="25dp"
-            android:background="#060609"
-            android:text="Empleado 4"
-            android:textAlignment="center"
-            android:textColor="#EFF1FA"
-            android:textSize="24sp" />
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="25dp"
+                android:background="#304FFE"
+                android:text="Empleado 3"
+                android:textAlignment="center"
+                android:textColor="#EFF1FA"
+                android:textSize="24sp" />
 
-        <EditText
-            android:id="@+id/txtNombres2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="20dp"
-            android:ems="10"
-            android:hint="Nombres: Josué Alexander"
-            android:inputType="textPersonName"
-            android:textColor="#070707"
-            android:textSize="24sp" />
+            <EditText
+                android:id="@+id/txtNombresEmpleado3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Nombres"
+                android:inputType="textPersonName"
+                android:textColor="#070707"
+                android:textSize="24sp" />
 
-        <EditText
-            android:id="@+id/txtApellidos2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="20dp"
-            android:ems="10"
-            android:hint="Apellidos: Villeda Chacón"
-            android:inputType="textPersonName"
-            android:textColor="#070707"
-            android:textSize="24sp" />
+            <EditText
+                android:id="@+id/txtApellidosEmpleado3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Apellidos"
+                android:inputType="textPersonName"
+                android:textColor="#070707"
+                android:textSize="24sp" />
 
-        <EditText
-            android:id="@+id/txtCargo2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="20dp"
-            android:ems="10"
-            android:hint="Cargo: Gerente"
-            android:inputType="textPersonName"
-            android:textColor="#070707"
-            android:textSize="24sp" />
+            <EditText
+                android:id="@+id/txtDescuentoISS3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Descuento ISS"
+                android:inputType="textPersonName"
+                android:textColor="#070707"
+                android:textSize="24sp" />
 
-        <EditText
-            android:id="@+id/txtHoras2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="20dp"
-            android:ems="10"
-            android:hint="Horas trabajadas en el mes: 105"
-            android:inputType="number"
-            android:textColor="#070707"
-            android:textSize="24sp" />
+            <EditText
+                android:id="@+id/txtDescuentoAFP3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Descuento AFP"
+                android:inputType="number|numberDecimal"
+                android:textColor="#070707"
+                android:textSize="24sp" />
 
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="22dp"
-            android:layout_marginEnd="50dp"
-            android:background="#ACABAB"
-            android:text="NO HAY BONO"
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="24sp" />
-    </LinearLayout>
+            <EditText
+                android:id="@+id/txtDescuentoRenta3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Descuento Renta"
+                android:inputType="number|numberDecimal"
+                android:textColor="#070707"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/txtSueldoEmpleado3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:hint="Sueldo líquido"
+                android:inputType="number|numberDecimal"
+                android:textColor="#070707"
+                android:textSize="24sp"
+                android:enabled="false" />
+
+            <TextView
+                android:id="@+id/tvResultado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="50dp"
+                android:background="#ACABAB"
+                android:text="NO HAY BONO"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
