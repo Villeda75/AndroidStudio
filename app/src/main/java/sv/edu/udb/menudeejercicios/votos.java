@@ -35,21 +35,6 @@ public class votos extends AppCompatActivity {
     private EditText StringVotos;
     private FrameLayout frameResultados;
 
-    //Contadores de votos
-    int VotosCandidato1 = 0;
-    int VotosCandidato2 = 0;
-    int VotosCandidato3 = 0;
-    int VotosCandidato4 = 0;
-    int VotosNulos = 0;
-    int TotalVotosValidos = 0;
-
-    //Contadores de porcentajes
-    Double PorcntjeCandto1 = 0.00;
-    Double PorcntjeCandto2 = 0.00;
-    Double PorcntjeCandto3 = 0.00;
-    Double PorcntjeCandto4 = 0.00;
-    Double totalPorcentaje = 0.00;
-
     String[] votosArray; //Array para votos
 
     @Override
@@ -84,6 +69,21 @@ public class votos extends AppCompatActivity {
                 Toast notificacion = Toast.makeText(this,"¡Datos vacíos! Debe ingresar una serie de votos de la forma: 1,2,1,4,4,3",Toast.LENGTH_SHORT);
                 notificacion.show();
             } else {
+
+                //Contadores de votos
+                int VotosCandidato1 = 0;
+                int VotosCandidato2 = 0;
+                int VotosCandidato3 = 0;
+                int VotosCandidato4 = 0;
+                int VotosNulos = 0;
+                int TotalVotosValidos = 0;
+
+                //Contadores de porcentajes
+                Double PorcntjeCandto1 = 0.00;
+                Double PorcntjeCandto2 = 0.00;
+                Double PorcntjeCandto3 = 0.00;
+                Double PorcntjeCandto4 = 0.00;
+                Double totalPorcentaje = 0.00;
 
                 votosArray = VotosText.split(",");   //Separamos cada valor del voto de la cadena en una posicion diferente del array por cada ,
                 int n = votosArray.length; //cantidad de votos
