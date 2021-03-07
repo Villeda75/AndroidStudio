@@ -8,6 +8,7 @@ import android.widget.TextView;
 import android.view.View;
 import android.content.Intent;
 import android.widget.Toast;
+import java.util.ArrayList;
 
 public class registroEmpleados extends AppCompatActivity {
 
@@ -20,6 +21,10 @@ public class registroEmpleados extends AppCompatActivity {
     private  EditText txtNombres;
     private EditText txtApellidos;
     private EditText txtCargo;
+    //Clase del empleado para validaciones
+    Empleado empleado = new Empleado();
+    public ArrayList<String> DataEmpleados = new ArrayList<String>();
+    Toast notificacion1 = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,15 +49,15 @@ public class registroEmpleados extends AppCompatActivity {
             String Cargo = txtCargo.getText().toString();
             String Horas = txtHoras.getText().toString();
 
-            //Clase del empleado para registro de datos y validaciones
-            Empleado empleado = new Empleado();
             boolean isValidate = empleado.validarHoras( Integer.parseInt(Horas) );
 
-            Toast notificacion1 = null;
-
             if( isValidate ){
-                //Guardamos los datos del empleado
-                empleado.Save(Nombres,Apellidos,Cargo,Horas,idEmpleado);
+                //Guardamos los datos de los empleados
+                DataEmpleados.add(Nombres.toString());
+                DataEmpleados.add(Apellidos.toString());
+                DataEmpleados.add(Cargo.toString());
+                DataEmpleados.add(Horas.toString());
+
                 notificacion1 = Toast.makeText(this,"Empleado " + (idEmpleado+1) +" registrado exitosamente",Toast.LENGTH_SHORT);
 
                 //Aumentamos el idEmpleado
@@ -61,8 +66,9 @@ public class registroEmpleados extends AppCompatActivity {
                 //Cuando el idEmpleado llega a 3, se reinicia el contador y se redirige al Activity de Resultados
                 if (idEmpleado == 3) {
                     idEmpleado = 0;
-                    Intent GoNext = new Intent(this, SueldoLiquidoActivity.class);
-                    startActivity(GoNext);
+                    Intent i = new Intent(this, SueldoLiquidoActivity.class);
+                    i.putStringArrayListExtra("Data", DataEmpleados); //Enviamos los datos de todos los empleados
+                    startActivity(i);
 
                 } else {
                     //Actualizamos el Titulo del empleado a registrar

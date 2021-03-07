@@ -193,6 +193,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="20dp"
+                android:layout_marginBottom="18dp"
                 android:ems="10"
                 android:enabled="false"
                 android:hint="Descuento ISS"
@@ -346,12 +347,67 @@
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="22dp"
                 android:layout_marginEnd="50dp"
-                android:background="#ACABAB"
+                android:background="#C51162"
                 android:text="NO HAY BONO"
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp"
-                android:visibility="invisible" />
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvEstadisticas"
+                android:layout_width="339dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="30dp"
+                android:text="ESTADÍSTICAS"
+                android:textAlignment="center"
+                android:textColor="#14247E"
+                android:textSize="24sp" />
+
+            <View
+                android:id="@+id/divider7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="4dp"
+                android:background="?android:attr/listDivider"
+                android:minHeight="2dp" />
+
+            <TextView
+                android:id="@+id/tvSalarioMayor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="50dp"
+                android:hint="Salario Mayor"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvSalarioMenor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:hint="Salario menor"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvSalariosMayores300"
+                android:layout_width="367dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="20dp"
+                android:hint="Empleados ganan más de 300"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp" />
 
         </LinearLayout>
     </ScrollView>
